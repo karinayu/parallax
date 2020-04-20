@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My Universe</title>
+	<link rel="stylesheet" href="/styles/style.css">
+	<link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+	<link rel="manifest" href="/img/site.webmanifest">
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="/img/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	<script src="parallax.js"></script>
+</head>
+<body>
+	<div class="container">
+		<ul id="scene">
+			<li class="layer" id="myuni" data-depth=".1"><h1>My Universe</h1><p class="description">Welocme to my world! Explore it by clicking on planets. Hope you enjoy it!</p></li>
+			<li class="layer" id="planet1" data-depth="0.8"><a href="/interests.html"><img src="/img/planet1.svg"></a></li>
+			<li class="layer" id="planet2" data-depth="-1"><a href="/books.html"><img src="/img/planet2.svg"></a></li>
+			<li class="layer" id="planet3" data-depth="-0.4"><a href="/inspiration.html"><img src="/img/planet3.svg"></a></li>
+			<li class="layer" id="planet4" data-depth="1.5"><a href="/gallery.html"><img src="/img/planet4.svg"></a></li>
+			<li class="layer" id="planet5" data-depth="0.7"><a href="/education.html"><img src="/img/planet5.svg"></a></li>
+			<li class="layer" id="rocket" data-depth="-0.5"><img src="/img/rocket.svg"></li>
+		</ul>
+	</div>
+	<script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
+<!-- <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #12102D url(http://hello-site.ru//main/images/preloads/rings.svg) center center no-repeat;background-size:128px;}</style>
+<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1500);};</script>
+-->
+</body>
+</html>
