@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium';
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: url("/img/inspiration.svg")  no-repeat;
+    background-size: 100%;
+    width:95%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-left: 5%;
+}
+header .back {
+    font-size: 24px;
+    color: #000;
+}
+header h1 {
+    font-size: 44px;
+    text-align: center;
+
+}
+header p {
+    width:300px;
+    font-size: 16px;
+    text-align: left;
+    padding-right: 3%;
+    color: #df89b5;
+}
+main {
+    background-image: linear-gradient(to top, #7d89ee 0%, #d2bffe 80%, #fff 100%);
+}
+.people {
+    height: 100vh;
+}
+.pinterest {
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+@font-face {
+    font-family: Titillium; /* Гарнитура шрифта */
+    src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
+	}
