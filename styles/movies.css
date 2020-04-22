@@ -112,7 +112,45 @@ main {
 .golding::after {
     content: 'Novel, 1954';
 }
+.inception::after {
+    content: 'Science fiction, 2010';
+}
+.hp::after {
+    content: 'Fantasy, 2004';
+}
+.dead::after {
+    content: 'Drama, 1989';
+}
+.happiness::after {
+    content: 'Drama, 2006';
+}
+.devil::after {
+    content: 'Comedy, 2010';
+}
+.memento::after {
+    content: 'Thriller, 2000';
+}
+.eternal::after {
+    content: 'Melodrama, 2004';
+}
+.mrnobody::after {
+    content: 'Drama, 2009';
+}
+.fade:hover::after {
+    opacity: 0.5;
+}
 
+.box3 {
+    width: 100%;
+    color: #fff;
+    padding-bottom: 50px;
+}
+.box3 h1 {
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
     src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
