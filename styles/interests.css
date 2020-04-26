@@ -1,40 +1,45 @@
-html {
-    scroll-behavior: smooth;
-}
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium', sans-serif;
 }
-.header {
+header {
     width: 100%;
     height: 100vh;
-    background: rgb(18,16,45);
-background: linear-gradient(180deg, rgba(18,16,45,1) 0%, rgba(48,14,133,1) 55%, rgba(76,19,150,1) 100%);
+    background: url(/img/interests3.svg) no-repeat;
+    background-size: cover;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-
-a {
+header a {
     text-decoration: none;
     color: #fff;
+    font-size: 24px;
+    margin-left: 5%;
 }
-p {
+header h1 {
+    font-size: 44px;
+    margin-left: 5%;
+    margin-top: 20vh;
+}
+header p {
     text-align: center;
+
 }
 .intro {
     display: flex;
     position: relative;
     font-size: 36px;
+    margin-left: 5%;
 }
 
 .typing {
     margin-left: 10px;
-    color: #E8C600;
+    color: #F1BE59;
 }
 .typing::after {
     content: '';
@@ -45,14 +50,7 @@ p {
     border-right: 2px solid #fff;
     animation: blink 0.7s infinite ease;
 }
-.icon-tabler {
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    stroke-width: 1.75;
 
-    padding-top: 10vh;
-}
 .description {
     height: 40vh;
     width: 100%;
