@@ -57,12 +57,17 @@ header p {
     margin-left: 5%;
     text-align: center;
 }
+.description .list {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 34px;
+}
 .box {
     height: 70vh;
     width: 70%;
     display: flex;
     align-items: center;
     margin-left: 15%;
+    color: rgba(0, 0, 0, 0.5);
 }
 .leftbox {
     width: 50%;
