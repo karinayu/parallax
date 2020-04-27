@@ -1,18 +1,20 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Titillium', sans-serif;
 }
 nav {
     position: fixed;
     top: 0;
-    left:0;
-    width: 90%;
+    left:-30px;
+    height: 15vh;
+    width: 100%;
+    padding-left: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px;
     z-index: 100000;
 }
 nav .logo {
@@ -21,16 +23,21 @@ nav .logo {
     font-size: 28px;
     transition: 0.6s;
 }
-nav ul {
+nav .nav-links {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    margin-right: 5%;
+    width: 50%;
+    height: 100%;
+    padding-right: 50px;
 }
 nav ul li {
     position: relative;
     list-style: none;
+}
+nav .hamburger {
+    width: 50%;
 }
 nav ul li a {
     position: relative;
@@ -40,14 +47,10 @@ nav ul li a {
     transition: 0.6s;
 }
 nav.sticky {
-    padding: 5px 100px;
+    height: 10vh;
     background: #fff;
 }
 nav.sticky ul li a {
-    color: #000;
-}
-header .back {
-    font-size: 24px;
     color: #000;
 }
 header p {
@@ -167,4 +170,4 @@ a {
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
     src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
-	}
+    }
