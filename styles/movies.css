@@ -2,12 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Titillium', sans-serif;
+    box-sizing: border-box;
 }
-.box1 {
+header {
     background: url(/img/books.svg) no-repeat;
     background-size: 100%;
     width: 95%;
-    height: 100vh;
+    height: 80vh;
     color: #000;
     display: flex;
     flex-direction: column;
@@ -16,19 +17,57 @@ body {
     overflow: hidden;
     margin-left: 5%;
 }
-.box1 .back {
-    font-size: 24px;
+nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+nav .logo {
+    position: relative;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.6s;
+}
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+}
+nav.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+nav.sticky ul li a {
     color: #000;
 }
-.box1 p {
-    font-size: 16px;
+header p {
+    font-size: 20px;
     width: 300px;
-    color: #df89b5;
+    color: #F1BE59;
 }
-
-.box1 h1 {
+header h1 {
     font-size: 44px;
-    margin-top: 20vh;
+    margin-top: 30vh;
 }
 a {
     color: #000;
@@ -37,12 +76,9 @@ a {
     width: 150px;
     height: 50px;
 }
-main {
-    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 80%, #fff 100%);
-}
-.box2 { 
+.box { 
     width: 100%;
-    color: #df89b5;
+    text-align: center;
 }
 .images {
     display: flex;
@@ -52,11 +88,19 @@ main {
     align-content: center;
     flex-flow: row wrap;
 }
-.box2 h1 {
+.box .title {
     text-align: center;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    color: #F1BE59;
+    font-size: 44px;
+}
+.box p {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 28px;
+}
+.box cite {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 18px;
 }
 .fade  {
     width: 200px;
@@ -88,30 +132,6 @@ main {
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-.london::after {
-    content: 'Novel, 1909';
-}
-.maugham::after {
-    content: 'Novel, 1915';
-}
-.dostoevskiy::after {
-    content: 'Novel, 1866';
-}
-.mcewan::after {
-    content: 'Novel, 2001';
-}
-.orwell::after {
-    content: 'Novel, 1949';
-}
-.remark::after {
-    content: 'Novel, 1936';
-}
-.sacks::after {
-    content: 'Non-fiction, 2012';
-}
-.golding::after {
-    content: 'Novel, 1954';
-}
 .inception::after {
     content: 'Science fiction, 2010';
 }
@@ -136,20 +156,20 @@ main {
 .mrnobody::after {
     content: 'Drama, 2009';
 }
+.euphoria::after {
+    content: 'Drama, 2019 - ...';
+}
+.sherlock::after {
+    content: 'Crime, 2010 - ...'
+}
+.glee::after {
+    content: 'Musical, 2009 - 2015'
+}
+.strangerthings::after {
+    content: 'Fantasy, 2016 - ...'
+}
 .fade:hover::after {
     opacity: 0.5;
-}
-
-.box3 {
-    width: 100%;
-    color: #fff;
-    padding-bottom: 50px;
-}
-.box3 h1 {
-    text-align: center;
-    width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */

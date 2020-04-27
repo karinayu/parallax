@@ -6,10 +6,54 @@ body {
 a {
     text-decoration: none;
 }
+nav {
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+nav .logo {
+    position: relative;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.6s;
+    color: #000;
+}
+nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5%;
+}
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+nav ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+}
+nav.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+nav.sticky ul li a {
+    color: #000;
+}
 header {
     background: url("/img/inspiration.svg")  no-repeat;
     background-size: 100%;
-    width:95%;
+    width: 95%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -18,24 +62,14 @@ header {
     overflow: hidden;
     margin-left: 5%;
 }
-header .back {
-    font-size: 24px;
-    color: #000;
+header p {
+    font-size: 20px;
+    width: 350px;
+    color: #F1BE59;
 }
 header h1 {
     font-size: 44px;
-    text-align: center;
-
-}
-header p {
-    width:300px;
-    font-size: 16px;
-    text-align: left;
-    padding-right: 3%;
-    color: #df89b5;
-}
-main {
-    background-image: linear-gradient(to top, #7d89ee 0%, #d2bffe 80%, #fff 100%);
+    margin-top: 30vh;
 }
 .people {
     height: 100vh;
