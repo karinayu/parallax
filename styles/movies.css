@@ -1,10 +1,64 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Titillium', sans-serif;
     box-sizing: border-box;
+    font-family: 'Titillium', sans-serif;
 }
 header {
+    position: fixed;
+    top: 0;
+    left:-30px;
+    height: 15vh;
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    z-index: 100;
+}
+header .logo {
+    position: relative;
+    text-decoration: none;
+    font-size: 28px;
+    transition: 0.6s;
+}
+header .burger {
+    display: block;
+}
+nav .nav-links {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding-right: 50px;
+}
+.nav-links li {
+    position: relative;
+    list-style: none;
+}
+.nav-links li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+}
+header.sticky {
+    height: 10vh;
+    background: #fff;
+}
+header.sticky .nav-links li a {
+    color: #000;
+}
+.viewbox p {
+    font-size: 20px;
+    width: 300px;
+    color: #F1BE59;
+}
+.viewbox {
     background: url(/img/books.svg) no-repeat;
     background-size: 100%;
     width: 95%;
@@ -17,55 +71,12 @@ header {
     overflow: hidden;
     margin-left: 5%;
 }
-nav {
-    position: fixed;
-    top: 0;
-    left:0;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-    padding: 40px 100px;
-    z-index: 100000;
-}
-nav .logo {
-    position: relative;
-    text-decoration: none;
-    font-size: 28px;
-    transition: 0.6s;
-}
-nav ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5%;
-}
-nav ul li {
-    position: relative;
-    list-style: none;
-}
-nav ul li a {
-    position: relative;
-    margin: 0 15px;
-    text-decoration: none;
-    color: #fff;
-    transition: 0.6s;
-}
-nav.sticky {
-    padding: 5px 100px;
-    background: #fff;
-}
-nav.sticky ul li a {
-    color: #000;
-}
-header p {
+.viewbox p {
     font-size: 20px;
     width: 300px;
     color: #F1BE59;
 }
-header h1 {
+.viewbox h1 {
     font-size: 44px;
     margin-top: 30vh;
 }
@@ -170,6 +181,86 @@ a {
 }
 .fade:hover::after {
     opacity: 0.5;
+}
+@media (max-width:768px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .logo {
+        z-index: 1;
+        padding: 0 0 0 20px;
+    }
+    .burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 1;
+        margin: 0 50px 0 0;
+    }
+    .burger span {
+        position: absolute;
+        background-color: #000;
+        left:0;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before,
+    .burger::after {
+        position: absolute;
+        content: '';
+        background-color: #000;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .burger::before {
+        top:0;
+    }
+    .burger::after {
+        bottom:0;
+    }
+    .burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .burger.active span {
+        transform: scale(0);
+    }
+    nav {
+        position: fixed;
+        top: -110%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: #F1BE59;
+        padding: 30px 0 0 0;
+        overflow: auto;
+        transition: all 0.5s ease 0s;
+        justify-content: center;
+    }
+    nav.active {
+        top:0;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    header {
+        background-color:#fff;
+        width: 100%;
+        left: 0;
+        height: 10vh;
+    }
 }
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
