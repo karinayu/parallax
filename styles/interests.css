@@ -187,7 +187,7 @@ header.sticky .logo, header.sticky .nav-links li a {
     }
     nav {
         position: fixed;
-        top: -110%;
+        top: -170%;
         left: 0;
         width: 100%;
         height: 100%;
@@ -232,7 +232,7 @@ header.sticky .logo, header.sticky .nav-links li a {
     .intro {
         display: flex;
         position: relative;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     .box {
         display: block;
