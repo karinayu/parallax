@@ -169,6 +169,10 @@ a {
     color: #F1BE59;
 }
 @media (max-width:768px) {
+    .viewbox {
+        background-position: -15vh 10vh;
+        background-size: 200%;
+    }
     body.lock {
         overflow: hidden;
     }
@@ -247,6 +251,18 @@ a {
         width: 100%;
         left: 0;
         height: 10vh;
+    }
+}
+@media screen and (max-width:768px) and (orientation: landscape) {
+    .viewbox {
+        background-position: left 10vh;
+        background-size: 100%;
+    }
+    .viewbox h1 {
+        font-size: 34px;
+    }
+    .viewbox p {
+        font-size: 16px;
     }
 }
 @font-face {

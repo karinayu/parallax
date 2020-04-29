@@ -238,6 +238,12 @@ nav .nav-links {
         left: 0;
         height: 10vh;
     }
+    #myuni {
+        margin-top: 15vh;
+    }
+    #myuni h1 {
+        font-size: 38px;
+    }
     #myuni span, #planet1 a, #planet2 a, #planet3 a,
     #planet4 a, #planet5 a  {
         display: none;
