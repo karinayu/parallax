@@ -81,59 +81,29 @@ header.sticky .nav-links li a {
     font-size: 44px;
     margin-top: 30vh;
 }
-.gallery-highlight {
-    width: 80%;
-    height: 50%;
-}
-section {
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-}
-.description {
-    width: 50%;
+.box {
+    width: 60%;
+    margin-left: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #12102D;
-    color: #fff;
 }
-.description h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-.description img {
-    margin-top: 30px;
-}
-.description a p {
-    text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
-}
-.gallery {
-    width: 50%;
+.about_me {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
-.preview {
+.about_me p {
+    font-size: 36px;
+}
+.emodji {
     display: flex;
-    width: 80%;
+    justify-content: center;
 }
-.preview img {
-    height: 100px;
-    flex-grow: 1;
-    opacity: 0.7;
-    cursor: pointer;
-    transition: opacity 0.3s ease ;
-}
-img.me-active {
-    opacity: 1;
+.emodji img {
+    width: 90px;
+    height: 90px;
+    margin: 0 5px 0 5px;
+    align-self: center;
 }
 @media (max-width:768px) {
     body.lock {
@@ -214,6 +184,34 @@ img.me-active {
         width: 100%;
         left: 0;
         height: 10vh;
+    }
+    .viewbox p {
+        width: 100%;
+    }
+    .box {
+        width: 90%;
+        margin-left: 5%;
+        align-items: center;
+    }
+    .about_me {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about_me p {
+        font-size: 16px;
+    }
+    .emodji {
+        display: flex;
+        justify-content: center;
+    }
+    .emodji img {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px 0 5px;
+        align-self: center;
     }
 }
 @font-face {
