@@ -17,9 +17,24 @@
 	<script src="parallax.js"></script>
 </head>
 <body>
+	<header>
+		<a href="/index.html" class="logo">MyUniverse</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/interests.html">Interests</a></li>
+                <li><a href="/books.html">Books</a></li>
+                <li><a href="/movies.html">Movies</a></li>
+                <li><a href="/inspiration.html">Inspiration</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+		</nav>
+		<div class="burger">
+            <span></span>
+        </div>
+    </header>
 	<div class="container">
 		<ul id="scene">
-			<li class="layer" id="myuni" data-depth=".1"><h1>My Universe</h1><p class="description">Welocme to my world! Explore it by clicking on planets. Hope you enjoy it!</p></li>
+			<li class="layer" id="myuni" data-depth=".1"><h1>My Universe</h1><p class="description">Welcome to my world! Explore it by clicking on planets. Hope you enjoy it!</p></li>
 			<li class="layer" id="planet1" data-depth="0.8"><a href="/interests.html"><img src="/img/planet1.svg"></a></li>
 			<li class="layer" id="planet2" data-depth="-1"><a href="/books.html"><img src="/img/planet2.svg"></a></li>
 			<li class="layer" id="planet3" data-depth="-0.4"><a href="/inspiration.html"><img src="/img/planet3.svg"></a></li>
@@ -32,9 +47,6 @@
 		var scene = document.getElementById('scene');
 		var parallax = new Parallax(scene);
 	</script>
-<!-- <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #12102D url(http://hello-site.ru//main/images/preloads/rings.svg) center center no-repeat;background-size:128px;}</style>
-<div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
-<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1500);};</script>
--->
+	<script type="text/javascript" src="/navbar.js"></script>
 </body>
 </html>
