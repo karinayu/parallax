@@ -51,8 +51,7 @@ header.sticky {
     height: 10vh;
     background: #fff;
 }
-header.sticky .logo,
-header.sticky .nav-links li a {
+header.sticky .logo, header.sticky .nav-links li a {
     color: #000;
 }
 .viewbox {
@@ -65,12 +64,6 @@ header.sticky .nav-links li a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-.viewbox a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 24px;
-    margin-left: 5%;
 }
 .viewbox h1 {
     font-size: 44px;
@@ -118,11 +111,7 @@ header.sticky .nav-links li a {
     margin-left: 15%;
     color: rgba(0, 0, 0, 0.5);
 }
-.leftbox {
-    width: 50%;
-    height: 40vh;
-}
-.rightbox {
+.leftbox, .rightbox {
     width: 50%;
     height: 40vh;
 }
@@ -145,7 +134,7 @@ header.sticky .nav-links li a {
     body.lock {
         overflow: hidden;
     }
-    .logo {
+    header .logo {
         z-index: 1;
         padding: 0 0 0 20px;
         color: #000;
@@ -221,6 +210,66 @@ header.sticky .nav-links li a {
         width: 100%;
         left: 0;
         height: 10vh;
+    }
+    .viewbox {
+        background: url(/img/interests-mobile-100.jpg) no-repeat;
+        background-size: cover;
+    }
+    .viewbox h1 {
+        font-size: 44px;
+        margin-top: 50vh;
+    }
+    .viewbox h1::before {
+        content: '';
+        position: absolute;
+        background: url(/img/interests-mobile-8.png) no-repeat;
+        background-size: 100%;
+        top: 20vh;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+    }
+    .intro {
+        display: flex;
+        position: relative;
+        font-size: 1.5em;
+    }
+    .box {
+        display: block;
+        text-align: center;
+        height: auto;
+        padding: 0 0 40px 0;
+    }
+    .leftbox, .rightbox {
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+    .leftbox img {
+        height: auto;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto; 
+    }
+    .rightbox .title {
+        font-size: 34px;
+    }
+    .description {
+        width: 70%;
+        color: #F1BE59;
+        font-size: 32px;
+        margin-left: 15%;
+        text-align: center;
+        padding: 0 0 40px 0;
+    }
+    .description .list {
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 24px;
+    }
+}
+@media screen and (max-width:768px) and (orientation: landscape) {
+    .viewbox h1::before {
+        display: none;
     }
 }
 @font-face {
