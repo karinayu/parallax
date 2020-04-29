@@ -238,6 +238,16 @@ nav .nav-links {
         left: 0;
         height: 10vh;
     }
+    #myuni span, #planet1 a, #planet2 a, #planet3 a,
+    #planet4 a, #planet5 a  {
+        display: none;
+    }
+    #rocket {
+        position: relative;
+        margin-top: 40vh;
+        margin-left: 35%;
+        width: 300px;
+    }
 }
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */

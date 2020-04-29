@@ -81,14 +81,10 @@ header.sticky .nav-links li a {
     font-size: 44px;
     margin-top: 30vh;
 }
-.people {
-    height: 100vh;
+.box {
+    width: 70%;
+    margin-left: 15%;
 }
-.pinterest {
-    height: 100vh;
-    color: #fff;
-}
-
 
 @media (max-width:768px) {
     body.lock {
