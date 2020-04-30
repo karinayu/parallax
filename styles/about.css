@@ -233,4 +233,5 @@ header.sticky .nav-links li a {
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
     src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
-	}
+    font-display: swap;
+    }
