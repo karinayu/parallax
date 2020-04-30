@@ -212,7 +212,7 @@ header.sticky .logo, header.sticky .nav-links li a {
         height: 10vh;
     }
     .viewbox {
-        background: url(/img/interests-mobile-100.jpg) no-repeat;
+        background: url(/img/interests-mobile-100.webp) no-repeat;
         background-size: cover;
     }
     .viewbox h1 {
