@@ -1,12 +1,26 @@
-window.addEventListener("scroll", function(){
-    if(window.innerWidth > 768) {
-    let header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-    };
-});
-let burger = document.querySelector(".burger");
-let nav = document.querySelector("nav");
-let body = document.querySelector("body");
+/* const header = document.querySelector("header");
+if(window.innerWidth > 768) {
+    let isEvent = false;
+    window.addEventListener("scroll", function(){
+        if (!isEvent) {
+            header.classList.toggle("sticky", window.scrollY > 0);
+            console.log("вызов");
+            isEvent = true;
+            this.setTimeout(function() {
+                isEvent = false;
+            }, 500);
+        };
+    });
+}; */
+const header = document.querySelector("header");
+if(window.innerWidth > 768) {
+    window.addEventListener("scroll", function(){
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+};
+const burger = document.querySelector(".burger");
+const nav = document.querySelector("nav");
+const body = document.querySelector("body");
 burger.onclick = () => {
     burger.classList.toggle("active");
     nav.classList.toggle("active");

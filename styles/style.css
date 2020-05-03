@@ -58,7 +58,7 @@ nav .nav-links {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background: url(/img/bg.svg) center 100% no-repeat;
+	background: url(../img/bg.svg) center 100% no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -257,6 +257,6 @@ nav .nav-links {
 }
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
-    src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/titillium.ttf); /* Путь к файлу со шрифтом */
     font-display: swap;
 	}

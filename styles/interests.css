@@ -57,7 +57,7 @@ header.sticky .logo, header.sticky .nav-links li a {
 .viewbox {
     width: 100%;
     height: 100vh;
-    background: url(/img/interests.svg) no-repeat;
+    background: url(../img/interests.svg) no-repeat;
     background-size: cover;
     color: #fff;
     display: flex;
@@ -212,7 +212,7 @@ header.sticky .logo, header.sticky .nav-links li a {
         height: 10vh;
     }
     .viewbox {
-        background: url(/img/interests-mobile-100.webp) no-repeat;
+        background: url(../img/interests-mobile-100.webp) no-repeat;
         background-size: cover;
     }
     .viewbox h1 {
@@ -222,7 +222,7 @@ header.sticky .logo, header.sticky .nav-links li a {
     .viewbox h1::before {
         content: '';
         position: absolute;
-        background: url(/img/interests-mobile-8.png) no-repeat;
+        background: url(../img/interests-mobile-8.png) no-repeat;
         background-size: 100%;
         top: 20vh;
         left: 15%;
@@ -274,6 +274,6 @@ header.sticky .logo, header.sticky .nav-links li a {
 }
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
-    src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/titillium.ttf); /* Путь к файлу со шрифтом */
     font-display: swap;
 	}

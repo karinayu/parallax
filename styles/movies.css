@@ -59,7 +59,7 @@ header.sticky .nav-links li a {
     color: #F1BE59;
 }
 .viewbox {
-    background: url(/img/books.svg) no-repeat;
+    background: url(../img/books.svg) no-repeat;
     background-size: 100%;
     width: 95%;
     height: 80vh;
@@ -281,6 +281,6 @@ a {
 }
 @font-face {
     font-family: Titillium; /* Гарнитура шрифта */
-    src: url(/fonts/titillium.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/titillium.ttf); /* Путь к файлу со шрифтом */
     font-display: swap;
 	}
