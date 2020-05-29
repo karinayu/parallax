@@ -7,6 +7,9 @@ body {
 li { 
 	list-style: none;
 }
+a {
+    text-decoration: none;
+}
 header {
     position: fixed;
     top: 0;
@@ -167,9 +170,101 @@ header.sticky .logo, header.sticky .nav-links li a {
 .box img{
     width: 400px;
 }
-.box .title {
+.title {
     font-size: 40px;
     color: #F1BE59;
+}
+.box a {
+    color: #F1BE59;
+}
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.examples .title {
+    text-align: center;
+}
+.slide {
+    width: 50%;
+    height: 50vh;
+    margin-left: 25%;
+    padding-bottom: 50px;
+    position: relative;
+    text-align: center;
+}
+.slide  input {
+    display: none;
+}
+.slide  input + label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: #fff;
+    border: 2px solid #F1BE59;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 4px;
+    top: 90%;
+    transition: background 0.8s ease-out 0s;
+}
+.slide  input + label:hover {
+    background: #F1BE59;
+}
+
+.slide  input:checked + label {
+    background: #F1BE59;
+}
+
+.slide  div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.slide  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.slide img {
+    width:300px;
+    height:auto;
+}
+
+.slide  input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.slide  div  p {
+    position: absolute;
+    font-size:18px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+}
+.music, .video {
+    padding: 50px 0 40px 0;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video iframe {
+    padding-top: 100px;
+    width: 80%;
+    height: 100%;
 }
 @keyframes blink {
     0% {
