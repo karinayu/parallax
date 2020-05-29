@@ -7,6 +7,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/inspiration.css">
+    <script src="parallax.js"></script>
 </head>
 <body>
     <header>
@@ -25,8 +26,18 @@
         </nav>
     </header>
     <div class="viewbox">
-        <h1>Inspiration</h1>
-        <p>Here I gathered things that make me happy and give me power to live.</p>
+        <div class="wrapper">
+            <h1>Inspiration</h1>
+            <p>Here I gathered things that make me happy and give me power to live.</p>
+        </div>
+        <div class="container">
+            <ul id="scene">
+                <li class="layer" id="austranate" data-depth="-0.5"><img src="./img/austranate.svg"></li>
+                <li class="layer" id="planet1" data-depth="0.3"><img src="./img/books1.svg"></a></li>
+                <li class="layer" id="planet2" data-depth="-0.9"><img src="./img/books2.svg"></a></li>
+                <li class="layer" id="planet3" data-depth="1"><img src="./img/books3.svg"></a></li>
+            </ul>
+        </div>
     </div>
     <main>
         <div class="box">
@@ -103,6 +114,10 @@
             </div>
         </div>
     </main>
+    <script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
     <script type="text/javascript" src="./navbar.js"></script>
 </body>
 </html>

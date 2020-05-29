@@ -7,6 +7,7 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/interests.css">
+    <script src="parallax.js"></script>
 </head>
 <body>
     <header>
@@ -25,10 +26,21 @@
         </nav>
     </header>
     <div class="viewbox">
+        <div class="wrapper">
         <h1>My interests</h1>
         <div class="intro">
         <p>I love making</p>
         <p class="typing"></p>
+        </div>
+        </div>
+        <div class="container">
+            <ul id="scene">
+                <li class="layer" id="rocket" data-depth="-0.3"><img src="./img/rocket-moon.svg"></li>
+                <li class="layer" id="planet1" data-depth="0.8"><img src="./img/interests1.svg"></a></li>
+                <li class="layer" id="planet2" data-depth="0.5"><img src="./img/interests2.svg"></a></li>
+                <li class="layer" id="planet3" data-depth="-0.8"><img src="./img/interests3.svg"></a></li>
+                <li class="layer" id="planet4" data-depth="1.5"><img src="./img/interests4.svg"></a></li>
+            </ul>
         </div>
     </div>
     <main>
@@ -125,6 +137,10 @@
             <p>Love what you do, do what you love.</p>
         </div>
     </main>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene);
+    </script>
     <script type="text/javascript" src="./navbar.js"></script>
     <script type="text/javascript" src="./typing.js"></script>
 </body>

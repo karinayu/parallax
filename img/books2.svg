@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 26.47 26.47">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.7;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="14.69" y1="-45.51" x2="12.16" y2="56.69" gradientTransform="translate(10.42 -5.27) rotate(36.35)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffcfcf"/>
+      <stop offset="0.99" stop-color="#421587"/>
+    </linearGradient>
+  </defs>
+  <title>books2</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="banner_1" data-name="banner 1">
+      <g id="artwork">
+        <circle class="cls-1" cx="13.24" cy="13.24" r="13.24" transform="translate(-5.27 10.42) rotate(-36.35)"/>
+      </g>
+    </g>
+  </g>
+</svg>

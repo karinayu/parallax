@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.61 45.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="63.16" y1="-15.31" x2="2.34" y2="42.13" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffcfcf"/>
+      <stop offset="0.99" stop-color="#421587"/>
+    </linearGradient>
+  </defs>
+  <title>books3</title>
+  <g id="Слой_2" data-name="Слой 2">
+    <g id="banner_1" data-name="banner 1">
+      <g id="artwork">
+        <circle class="cls-1" cx="22.81" cy="22.81" r="22.81"/>
+      </g>
+    </g>
+  </g>
+</svg>
