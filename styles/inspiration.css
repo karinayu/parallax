@@ -146,6 +146,14 @@ header.sticky .nav-links li a {
     text-decoration: none;
     color: #F1BE59;
 }
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+  .fade-in.appear {
+    opacity: 1;
+  }
 @media (max-width:768px) {
     .viewbox {
         background-position: left 10vh;
