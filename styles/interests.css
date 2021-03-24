@@ -266,6 +266,27 @@ header.sticky .logo, header.sticky .nav-links li a {
     width: 80%;
     height: 100%;
 }
+.back_to_top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid;
+    color: #444;
+    cursor: pointer;
+    border-radius: 25px;
+    display: none;
+}
+.back_to_top:hover {
+    border: 2px solid;
+}
+.back_to_top-show {
+    display: block;
+}
 @keyframes blink {
     0% {
         opacity: 0;
